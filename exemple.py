@@ -5,4 +5,4 @@ bot = python_telegram_notification.telegram_notification()
 
 # send stuff
 bot.send_message('hello word')
-bot.send_document('README.md')
+bot.send_document('exemple.py')
