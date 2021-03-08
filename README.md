@@ -19,7 +19,7 @@ The first time this code is run it will walk you through the initialization proc
     bot = python_telegram_notification.telegram_notification(add_prefix='optional_prefix_')
 
 ### Send
-TO send notification use one of the following commands:
+To send notification use one of the following commands:
 
     bot.send_message(message_string)
     bot.send_document(PATH_TO_DOCUMENT, filename='optinal_file_name')
