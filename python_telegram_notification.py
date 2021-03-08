@@ -18,10 +18,10 @@ class telegram_notification:
                     confidential_yaml_file.write('chat_id: xxxx')
                 print(colored(
                     'Create a telegram bot. this is done by: \
-                    \n1) downloding and signing into telegram. \
+                    \n1) downloading and signing into telegram.  \
                     \n2) starting a chat with \"BotFather\" \
-                    \n3) send \"BotFather\" the text "/newbot", then follow the "BotFather" instraction to creat the bot \
-                    \n4) when you are done you will recive a the new bot token. enter the token into the file: "' + path_to_confidential_file + ' " which was create in the currnt directory',
+                    \n3) send him the text "/newbot", then follow the "BotFather" instraction to create the bot \
+                    \n4) when you are done you will receive a the new bot token. enter the token into the file: "' + path_to_confidential_file + '" which was create in the current directory',
                     color='red', attrs=['underline', 'bold', 'blink', 'reverse']))
                 input(colored('when you are done press Enter \n', color='yellow', attrs=['underline', 'bold', 'blink', 'reverse']))
 
@@ -31,10 +31,10 @@ class telegram_notification:
                 print(colored('telegram bot TOKEN not defined yet', color='yellow', attrs=['underline', 'bold', 'blink', 'reverse']))
                 print(colored(
                     'Create a telegram bot. this can be done by \
-                    \n1) downloding and signing into telegram.  \
+                    \n1) downloading and signing into telegram.  \
                     \n2) starting a chat with \"BotFather\" \
-                    \n3) send him the text "/newbot", then follow the "BotFather" instraction to creat the bot \
-                    \n4) when you are done you will recive a the new bot token. enter the token into the file: "' + path_to_confidential_file + '" which was create in the currnt directory',
+                    \n3) send him the text "/newbot", then follow the "BotFather" instraction to create the bot \
+                    \n4) when you are done you will receive a the new bot token. enter the token into the file: "' + path_to_confidential_file + '" which was create in the current directory',
                     color='red', attrs=['underline', 'bold', 'blink', 'reverse']))
                 input(colored('when you are done press Enter \n', color='yellow', attrs=['underline', 'bold', 'blink', 'reverse']))
                 print('...')

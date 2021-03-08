@@ -5,4 +5,4 @@ bot = python_telegram_notification.telegram_notification(add_prefix='optional_pr
 
 # send stuff
 bot.send_message(bot_message='hello word')
-bot.send_document(bot_document_path='exemple.py', filename='optinal_file_name.py')
+bot.send_document(bot_document_path='exempla.py', filename='optional_file_name.py')
