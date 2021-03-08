@@ -40,7 +40,6 @@ class telegram_notification:
                 print('...')
                 confidential_conf = get_config(path_to_confidential_file)
 
-
             def telegram_command(update, context):
                 context.bot.sendMessage(update.message.chat_id,
                                         text='enter chat_id in to: ' + path_to_confidential_file + ' as:')
@@ -79,15 +78,19 @@ class telegram_notification:
         except:
             print('telegram send_message Failed')
 
-    def send_photo(self, bot_image, caption=None):
-        try:
-            self.telegram_bot.send_photo(chat_id=self.chat_id, photo=bot_image, caption=self.add_prefix + caption)
-        except:
-            print('telegram send_photo Failed')
+    # def send_photo(self, bot_image, caption=None):
+    #     try:
+    #         caption = caption if caption is not None else bot_image.split('/')[-1]
+    #         caption = self.add_prefix + caption
+    #         self.telegram_bot.send_photo(chat_id=self.chat_id, photo=bot_image, caption=caption)
+    #     except:
+    #         print('telegram send_photo Failed')
 
     def send_document(self, bot_document_path, filename=None):
         try:
-            self.telegram_bot.send_document(chat_id=self.chat_id, document=open(bot_document_path, 'rb'), filename=self.add_prefix + filename)
+            filename = filename if filename is not None else bot_document_path.split('/')[-1]
+            filename = self.add_prefix + filename
+            self.telegram_bot.send_document(chat_id=self.chat_id, document=open(bot_document_path, 'rb'), filename=filename)
         except:
             print('telegram send_document Failed')
 
